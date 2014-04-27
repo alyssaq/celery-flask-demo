@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block content %}
+  <div class="jumbotron">
+		<h2>Processing ... </h2>
+    <img src="/static/img/ajax-loader.gif" alt="loading..."/>
+    
+    <p>
+    <button class="btn btn-info" style="margin-top:20px">
+      <a href="javascript:history.go(0)" class="alert-link">Click here to Refresh</a>
+    </button>
+    </p>
+  </div>
+{% endblock %}
