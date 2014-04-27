@@ -23,7 +23,6 @@ def result(key):
     result = BaseAsyncResult(key, app=tasks.celery)
 
     if result.ready():
-        print(result.get())
         return render_template('result.html', result=result.get())
     elif result.failed():
         return result.traceback
