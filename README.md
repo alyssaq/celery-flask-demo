@@ -3,12 +3,20 @@ Mini Flask app using celery.
 Broker tested with ironmq, redis, mongodb.  
 Save results with redis, mongodb.  
 
-## Run the celery worker
+## Running
+
+To run the demo:
+
+#### 1. Clone the repo
+
+    $ git clone git@github.com:alyssaq/celery-flask-demo.git
+
+#### 2. Run the celery worker
 
     $ celery -A tasks worker -E
 
-## Start the Flask app
+#### 3. Start the Flask app
 
     $ python app.py
 
-Open your browser at `0.0.0.0:5000`
+#### 4. Open your browser at `0.0.0.0:5000` and add numbers!
